@@ -1,5 +1,10 @@
 # ⚙️ node-sqlite3
 
+> [!IMPORTANT] 
+> **注意：本仓库为 sqlite3 的 fork 版本，二进制包默认使用阿里云镜像下载，仅支持预构建二进制，不支持源码编译和 node-gyp rebuild。**  
+> 更新时间：2025年4月15日
+
+
 Asynchronous, non-blocking [SQLite3](https://sqlite.org/) bindings for [Node.js](http://nodejs.org/).
 
 [![Latest release](https://img.shields.io/github/release/TryGhost/node-sqlite3.svg)](https://www.npmjs.com/package/sqlite3)
