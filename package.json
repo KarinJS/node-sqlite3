@@ -1,7 +1,7 @@
 {
   "name": "@karinjs/sqlite3",
   "description": "Asynchronous, non-blocking SQLite3 bindings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/TryGhost/node-sqlite3",
   "author": {
     "name": "Mapbox",
