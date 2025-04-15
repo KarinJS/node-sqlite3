@@ -1,5 +1,5 @@
 {
-  "name": "sqlite3",
+  "name": "@karinjs/sqlite3",
   "description": "Asynchronous, non-blocking SQLite3 bindings",
   "version": "5.1.7",
   "homepage": "https://github.com/TryGhost/node-sqlite3",
@@ -33,44 +33,32 @@
     "Ben Noordhuis <ben@strongloop.com>"
   ],
   "files": [
-    "binding.gyp",
-    "deps/",
     "lib/*.js",
     "lib/*.d.ts",
-    "src/"
+    "!README.md",
+    "!LICENSE"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/TryGhost/node-sqlite3.git"
-  },
-  "dependencies": {
+  },  
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "mocha": "10.2.0",
+    "prebuild": "12.1.0",
+    "node-gyp": "8.x",
     "bindings": "^1.5.0",
     "node-addon-api": "^7.0.0",
     "prebuild-install": "^7.1.1",
     "tar": "^6.1.11"
   },
-  "devDependencies": {
-    "eslint": "8.56.0",
-    "mocha": "10.2.0",
-    "prebuild": "12.1.0"
-  },
-  "peerDependencies": {
-    "node-gyp": "8.x"
-  },
-  "peerDependenciesMeta": {
-    "node-gyp": {
-      "optional": true
-    }
-  },
-  "optionalDependencies": {
-    "node-gyp": "8.x"
-  },
   "scripts": {
-    "install": "prebuild-install -r napi || node-gyp rebuild",
+    "install": "npx @karinjs/prebuild-install -r napi --binary-name=sqlite3",
     "prebuild": "prebuild --runtime napi --all --verbose",
     "rebuild": "node-gyp rebuild",
     "upload": "prebuild --verbose --prerelease",
-    "test": "node test/support/createdb.js && mocha -R spec --timeout 480000"
+    "test": "node test/support/createdb.js && mocha -R spec --timeout 480000",
+    "init": "npx @karinjs/prebuild-install -r napi --binary-name=sqlite3"
   },
   "license": "BSD-3-Clause",
   "keywords": [
