@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/KarinJS/node-sqlite3/compare/v1.0.0...v1.0.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* init ([eeb148d](https://github.com/KarinJS/node-sqlite3/commit/eeb148d2317b8fd44f50e312f9a362adb2ed0141))
+
 ## 1.0.0 (2025-04-15)
 
 
