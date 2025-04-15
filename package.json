@@ -53,12 +53,12 @@
     "tar": "^6.1.11"
   },
   "scripts": {
-    "install": "npx @karinjs/prebuild-install -r napi --binary-name=sqlite3",
+    "install": "npx @karinjs/prebuild-install -r napi --pkg_version=5.1.7 --pkg_name=sqlite3",
     "prebuild": "prebuild --runtime napi --all --verbose",
     "rebuild": "node-gyp rebuild",
     "upload": "prebuild --verbose --prerelease",
     "test": "node test/support/createdb.js && mocha -R spec --timeout 480000",
-    "init": "npx @karinjs/prebuild-install -r napi --binary-name=sqlite3"
+    "init": "npx @karinjs/prebuild-install -r napi --pkg_version=5.1.7 --pkg_name=sqlite3"
   },
   "license": "BSD-3-Clause",
   "keywords": [
